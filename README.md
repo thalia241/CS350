@@ -1,1 +1,21 @@
-# CS350
+Smart Thermostat Embedded Systems Project
+
+This repository contains my smart thermostat prototype developed for CS-350: Emerging Systems Architectures and Technologies. The project focuses on designing and implementing a low-level embedded system that controls hardware components, manages system state, and provides real-time user interaction. Rather than emphasizing cloud connectivity, the goal of this project was to ensure the core system logic, hardware integration, and performance considerations were sound and aligned with real-world product constraints.
+
+The thermostat continuously monitors ambient temperature using an AHT20 sensor over the I2C bus. Users interact with the system through three physical buttons that allow them to cycle between off, heating, and cooling modes and adjust the temperature set point. System feedback is provided through LEDs that visually represent heating and cooling behavior, as well as a 16×2 LCD that displays the current date and time along with temperature and operating state information. The system also outputs a serial status message every thirty seconds, simulating communication with a backend server and laying the groundwork for future IoT integration 
+
+CS350ProjectReport
+
+.
+
+One of the strongest aspects of this project was my ability to combine multiple hardware interfaces into a single, cohesive system. I implemented a finite state machine to manage thermostat behavior, which helped keep the logic organized, predictable, and easy to extend. The code cleanly separates responsibilities such as sensor input, state transitions, display management, and LED control, making the system easier to understand and maintain. This structure also made debugging significantly more manageable as the project grew in complexity 
+
+Thermostat
+
+.
+
+If I were to improve this project, the next step would be expanding beyond a prototype environment. While the system successfully demonstrates core thermostat functionality, adding Wi-Fi connectivity, power optimization strategies, and more robust fault handling would be necessary for a production-ready device. These improvements would further align the system with consumer IoT expectations.
+
+Throughout this project, I added several tools and resources to my technical support network, including embedded Python libraries for GPIO, I2C sensors, LCD displays, and serial communication. I also gained experience working with vendor documentation and comparing hardware architectures, which helped strengthen my ability to make informed technical decisions rather than defaulting to convenience.
+
+The skills I developed during this project are highly transferable to other coursework and real-world development. These include embedded systems programming, state machine design, hardware/software integration, and evaluating architectural trade-offs based on performance, power, and business requirements. I also strengthened my ability to clearly document technical decisions and justify them in a professional context. 
