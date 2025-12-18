@@ -2,17 +2,9 @@ Smart Thermostat Embedded Systems Project
 
 This repository contains my smart thermostat prototype developed for CS-350: Emerging Systems Architectures and Technologies. The project focuses on designing and implementing a low-level embedded system that controls hardware components, manages system state, and provides real-time user interaction. Rather than emphasizing cloud connectivity, the goal of this project was to ensure the core system logic, hardware integration, and performance considerations were sound and aligned with real-world product constraints.
 
-The thermostat continuously monitors ambient temperature using an AHT20 sensor over the I2C bus. Users interact with the system through three physical buttons that allow them to cycle between off, heating, and cooling modes and adjust the temperature set point. System feedback is provided through LEDs that visually represent heating and cooling behavior, as well as a 16×2 LCD that displays the current date and time along with temperature and operating state information. The system also outputs a serial status message every thirty seconds, simulating communication with a backend server and laying the groundwork for future IoT integration 
+The thermostat continuously monitors ambient temperature using an AHT20 sensor over the I2C bus. Users interact with the system through three physical buttons that allow them to cycle between off, heating, and cooling modes and adjust the temperature set point. System feedback is provided through LEDs that visually represent heating and cooling behavior, as well as a 16×2 LCD that displays the current date and time along with temperature and operating state information. The system also outputs a serial status message every thirty seconds, simulating communication with a backend server and laying the groundwork for future IoT integration.
 
-CS350ProjectReport
-
-.
-
-One of the strongest aspects of this project was my ability to combine multiple hardware interfaces into a single, cohesive system. I implemented a finite state machine to manage thermostat behavior, which helped keep the logic organized, predictable, and easy to extend. The code cleanly separates responsibilities such as sensor input, state transitions, display management, and LED control, making the system easier to understand and maintain. This structure also made debugging significantly more manageable as the project grew in complexity 
-
-Thermostat
-
-.
+One of the strongest aspects of this project was my ability to combine multiple hardware interfaces into a single, cohesive system. I implemented a finite state machine to manage thermostat behavior, which helped keep the logic organized, predictable, and easy to extend. The code cleanly separates responsibilities such as sensor input, state transitions, display management, and LED control, making the system easier to understand and maintain. This structure also made debugging significantly more manageable as the project grew in complexity.
 
 If I were to improve this project, the next step would be expanding beyond a prototype environment. While the system successfully demonstrates core thermostat functionality, adding Wi-Fi connectivity, power optimization strategies, and more robust fault handling would be necessary for a production-ready device. These improvements would further align the system with consumer IoT expectations.
 
